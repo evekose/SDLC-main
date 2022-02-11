@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <title name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDLC Models</title>
+</head>
+<body>
+    <h2>Accordion</h2>
+
+    <button class="accordion">Waterfall Model</button>
+    <div class="panel">
+      <p>Waterfall Model is a sequential model that divides software development into pre-defined phases. Each phase must be completed before the next phase can begin with no overlap between the phases. Each phase is designed for performing specific activity during the SDLC phase. It was introduced in 1970 by Winston Royce.</p>
+        <p>Waterfall Methodology can be used when:
+        
+            -Requirements are not changing frequently
+            -Application is not complicated and big
+            -Project is short
+            -Requirement is clear
+            -Environment is stable
+            -Technology and tools used are not dynamic and is stable
+            -Resources are available and trained</p>
+      <img src="images/waterfall.png" alt=""width="250px">
+    </div>
+    
+
+    <button class="accordion">Iterative Model</button>
+    <div class="panel">
+      <p>Iterative and incremental development is any combination of both iterative design or iterative method and incremental build model for development.</p>
+        <p>The basic idea behind this method is to develop a system through repeated cycles (iterative) and in smaller portions at a time (incremental), allowing software developers to take advantage of what was learned during development of earlier parts or versions of the system. Learning comes from both the development and use of the system, where possible key steps in the process start with a simple implementation of a subset of the software requirements and iteratively enhance the evolving versions until the full system is implemented. At each iteration, design modifications are made and new functional capabilities are added.</p>
+        <p>Many examples of early usage are provided in Craig Larman and Victor Basili's article "Iterative and Incremental Development: A Brief History", with one of the earliest being NASA's 1960s Project Mercury.</p>
+        <p>When to use Iterative models?
+            Requirements of the system are clearly understood
+            When demand for an early release of a product arises
+            When software engineering team are not very well skilled or trained
+            When high-risk features and goals are involved
+            Such methodology is more in use for web application and product based companies</p>
+        <img src="images/Iterative_Process_Diagram.svg.png" alt=""width="250px">
+    </div>
+    
+    <button class="accordion">Prototyping Model</button>
+    <div class="panel">
+      <p>The prototyping model is a systems development method in which a prototype is built, tested and then reworked as necessary until an acceptable outcome is achieved from which the complete system or product can be developed. </p>
+      <p></p>
+      <p>This model works best in scenarios where not all of the project requirements are known in detail ahead of time. It is an iterative, trial-and-error process that takes place between the developers and the users.</p>
+    <img src="images/051719_0618_Prototyping1.png" alt=""width="250px">
+    </div>
+
+    <button class="accordion">Spiral Model</button>
+    <div class="panel">
+      <p>Spiral Model is a risk-driven software development process model. It is a combination of waterfall model and iterative model. Spiral Model helps to adopt software development elements of multiple process models for the software project based on unique risk patterns ensuring efficient development process. The spiral model in software engineering was first mentioned by Barry Boehm in his 1986 paper.</p>
+      <p>When to use Spiral Model?
+        A Spiral model in software engineering is used when project is large
+        When releases are required to be frequent, spiral methodology is used
+        When creation of a prototype is applicable
+        When risk and costs evaluation is important
+        Spiral methodology is useful for medium to high-risk projects
+        When requirements are unclear and complex, Spiral model in SDLC is useful
+        When changes may require at any time
+        When long term project commitment is not feasible due to changes in economic priorities</p>
+    <img src="images/spiral_model.png" alt=""width="250px">
+    </div>
+
+    <button class="accordion">V-Shape Model</button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <button class="accordion">Agile Model</button>
+    <div class="panel">
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+    
+    <script>
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+    
+    for (i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+          panel.style.display = "none";
+        } else {
+          panel.style.display = "block";
+        }
+      });
+    }
+    </script>
+
+</body>
+</html>
