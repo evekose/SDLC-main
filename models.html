@@ -8,69 +8,108 @@
     <title>SDLC Models</title>
 </head>
 <body>
-    <h2>Accordion</h2>
+    <h2>Elutsükli mudelid</h2>
 
-    <button class="accordion">Waterfall Model</button>
+    <button class="accordion">Koskmudel ehk Waterfall mudel</button>
     <div class="panel">
-      <p>Waterfall Model is a sequential model that divides software development into pre-defined phases. Each phase must be completed before the next phase can begin with no overlap between the phases. Each phase is designed for performing specific activity during the SDLC phase. It was introduced in 1970 by Winston Royce.</p>
-        <p>Waterfall Methodology can be used when:
-        
-            -Requirements are not changing frequently
-            -Application is not complicated and big
-            -Project is short
-            -Requirement is clear
-            -Environment is stable
-            -Technology and tools used are not dynamic and is stable
-            -Resources are available and trained</p>
-      <img src="images/waterfall.png" alt=""width="250px">
+      <p>Koskmudel on üks enimteatud ja vanimaid tarkvaraarenduse meetodeid, mis on oma nimetuse saanud järjestikuse veekoskede analoogiast – vesi langeb ühelt astmelt järgmisse ega pöördu tagasi. Töös liigutakse samuti samm-sammult madalamale astmele ning kõik etapid peavad olema täielikult lõpetatud enne järgmise etapi alustamist. </p>
+        <p>Kose mudeli puhul keskendutakse projekti käigus tehtavate tööde kirjeldustele. Pannakse kirja tööd, mis tuleb tulemuse saavutamiseks teha ning määratakse nende järjestus, tähtajad, vajalikud ressursid ja tegijad.</p>
+        <p>Koskmudelit kirjeldas esmakordselt Winston W. Royce 1970. aastal. Koskmudel on järjestikune mudel, mida kasutatakse erineva tarkvara loomiseks, kus projekt kulgeb pidevalt allapoole ega pöördu tagasi samamoodi nagu koskede puhul. Niisiis tähendab kose mudel, et järgmise etapi juurde peaks liikuma alles siis, kui eelmine etapp on lõpule viidud, kuigi mõne mudeli puhul võivad mõningad variatsioonid ja muutused olla.</p>
+        <p>Koskmudelit saab kasutada, kui:</p>
+        <p>-Projekt on väike;  </p>
+        <p>-Nõuded on hästi tuntud, selged ja fikseeritud; </p>
+        <p>-Toote määratlus on stabiilne; </p>
+        <p>-Tehnoloogia ja tehtavad muudatused on arusaadavad; </p>
+        <p>-Puuduvad mitmetähenduslikud nõuded; </p>
+        <p>-Kvaliteetsed allikad on vabalt kättesaadavad; </p>
+        <p>-Tarkvara on suhteliselt väikesemahuline. </p>
+        <p></p>
+      <img src="images/450px-Koskmudel.svg.png" alt=""width="300px">
+      <p>Koskmudeli etapid:</p>
+      <img src="images/koskmudel.jpeg" alt=""width="500px">
     </div>
     
 
-    <button class="accordion">Iterative Model</button>
+    <button class="accordion">Iteratiivne mudel ehk Iterative Model</button>
     <div class="panel">
-      <p>Iterative and incremental development is any combination of both iterative design or iterative method and incremental build model for development.</p>
-        <p>The basic idea behind this method is to develop a system through repeated cycles (iterative) and in smaller portions at a time (incremental), allowing software developers to take advantage of what was learned during development of earlier parts or versions of the system. Learning comes from both the development and use of the system, where possible key steps in the process start with a simple implementation of a subset of the software requirements and iteratively enhance the evolving versions until the full system is implemented. At each iteration, design modifications are made and new functional capabilities are added.</p>
-        <p>Many examples of early usage are provided in Craig Larman and Victor Basili's article "Iterative and Incremental Development: A Brief History", with one of the earliest being NASA's 1960s Project Mercury.</p>
-        <p>When to use Iterative models?
-            Requirements of the system are clearly understood
-            When demand for an early release of a product arises
-            When software engineering team are not very well skilled or trained
-            When high-risk features and goals are involved
-            Such methodology is more in use for web application and product based companies</p>
-        <img src="images/Iterative_Process_Diagram.svg.png" alt=""width="250px">
+      <p>Koskmudeli kitsaskohtade vältimiseks võeti 1980. a Harlan D. Mills’i poolt kasutusele iteratiivne mudel. Selles mudelis on protsess väga otsejooneline: konkreetsed etapid konkreetses järjekorras, liikumine punktist A punkti B ja tulemuseks on lõpptoode.</p>
+      <p>Iteratiivse mudeli puhul valmistatakse toote esimene variant, see vaadatakse üle, otsustatakse, kas on valitud õige tee. Algab uus iteratsioon: toodet täiendatakse, see vaadatakse üle, otsustatakse, kas on valitud õige tee. Algab uus iteratsioon… kuni toode saab valmis.</p>
+      <p>Iteratiivse mudeli puhul on kogu protsess jagatud mitmeks etapiks (siin ja edasi – iteratsioon), iga iteratsioon kestab 2-6 nädalat. Alguses valmistatakse tarkvara kriitilisem osa, sisuliselt jälgitakse seejuures samu samme, mida koskmudeli puhul. Järgmise iteratsiooni ajal täiendatakse tarkvara, luues uue funktsionaalsuse või täiendades seda, mis oli varem tehtud. Iteratsioone korrutatakse projekti lõpetamiseni. Kui tarkvara on valmis, võetakse see kasutusele. Protsessi paremaks suunamiseks võetakse arvesse riskianalüüsi tulemusi. </p>
+        <img src="images/iteratiivne mudel.jpg" alt=""width="600px">
+      <p>Millal kasutada iteratiivset mudelit?</p>
+      <p>-On olemas üldine pilt, mida tahetakse saavutada. Väiksemaid ülesandeid saab täpsustada hiljem.</p>
+      <p>-Projekt on suur. Kui on oht, et projekt venib pikaks, tasub võtta kasutusele iteratiivne mudel, kuna see lubab rakendada paralleelseid iteratsioone: minimeerib riski, et projekti lõpuks muutuvad tarkvara vajadused/nõudmised.</p>
     </div>
     
-    <button class="accordion">Prototyping Model</button>
+    <button class="accordion">Prototüüpimine ehk Prototyping</button>
     <div class="panel">
-      <p>The prototyping model is a systems development method in which a prototype is built, tested and then reworked as necessary until an acceptable outcome is achieved from which the complete system or product can be developed. </p>
-      <p></p>
-      <p>This model works best in scenarios where not all of the project requirements are known in detail ahead of time. It is an iterative, trial-and-error process that takes place between the developers and the users.</p>
-    <img src="images/051719_0618_Prototyping1.png" alt=""width="250px">
+      <p>Prototüüp on süsteemi algne versioon, mida kasutatakse disaini võimaluste katsetamiseks ning ideede demonstreerimiseks. Prototüüpe saab kasutada erinevates arenduse faasides. Näiteks nõuete analüüsi etapil nende leidmiseks ja valideerimiseks; disaini etapil valikuvõimaluste uurimiseks ning kasutajaliidese kavandamiseks.</p>
+      <p>Kasu prototüüpimisest on: parem süsteemi kasutusmugavus, täpsem ühildumine kasutaja tegelike vajadustega; parem kvaliteet ja hooldatavus ning väiksem vaev arendamisel.</p>
+    <img src="images/prototüüp mudel.jpeg" alt=""width="500px">
+    <p>Prototüüpimise etapid on järgmised:</p>
+    <p>-Nõuete kogumine - seda tehakse üldisemal tasemel ja samas ka fikseeritakse, mida on kindlasti vaja edaspidi täpsustama hakata.</p>
+    <p>-Kiire kavandamine - keskendub nähtavale osale (sisend, väljund, vormid jms) ja selle tulemuseks on prototüüp. Klient hindab prototüüpi ja oskab selle alusel ka oma soove täpsustada.</p>
+    <p>-Järgneb iteratsioon prototüübi parandamiseks, kuni see rahuldab kasutajat. Samal ajal saab arendaja uusi teadmisi kliendi soovide kohta.</p>
+    <p>Prototüübi arendamisel on oluline, et see saaks loodud kiiresti, kasutades selleks abivahendeid (kiire prototüüpimise keeled ja tööriistad). Prototüüp ei pea sisaldama kogu funktsionaalsust - ta peab keskenduma sellele, millest ei ole hästi aru saadud; prototüübis ei pea olema vigade kontrolli ning prototüüp on suunatud funktsionaalsetele nõuetele (mitte näiteks turvalisuse probleemidele).</p>
+    <p>Prototüüpimist võib teha erineval põhimõttel - näiteks ühekordne prototüüpimine (Throw away prototyping), evolutsiooniline prototüüpimine (Evolutionary prototyping), lisanduv prototüüpimine (Incremental prototyping).</p>
+    <p>Kokkuvõtvalt, erinevalt koskmudelist ei koostata iteratiivsete arendusmudelite järgi esmalt kõikehõlmavat analüüsidokumenti, milline sisaldab muutumatuid kasutajate vajadusi ning „kirjutatakse verega alla" süsteemi tellija ja realiseerija vahel - iteratiivsed mudelid võimaldavad lihtsamalt viia sisse muudatusi süsteemi, saada kasutajatelt varajast tagasisidet, testida arendusprojekti varajases faasis süsteemi arhitektuurilise lahenduse sobivust jmt.</p>
+    <p>Prototüübi mudelit tuleks kasutada siis, kui soovitud süsteem peab lõppkasutajatega palju suhtlema. Tavaliselt on võrgusüsteemidel, veebiliidestel väga palju lõppkasutajatega suhtlemist, need sobivad kõige paremini prototüübi mudeliks.</p>
     </div>
 
-    <button class="accordion">Spiral Model</button>
+    <button class="accordion">Spiraalmudel ehk Spiral Model</button>
     <div class="panel">
-      <p>Spiral Model is a risk-driven software development process model. It is a combination of waterfall model and iterative model. Spiral Model helps to adopt software development elements of multiple process models for the software project based on unique risk patterns ensuring efficient development process. The spiral model in software engineering was first mentioned by Barry Boehm in his 1986 paper.</p>
-      <p>When to use Spiral Model?
-        A Spiral model in software engineering is used when project is large
-        When releases are required to be frequent, spiral methodology is used
-        When creation of a prototype is applicable
-        When risk and costs evaluation is important
-        Spiral methodology is useful for medium to high-risk projects
-        When requirements are unclear and complex, Spiral model in SDLC is useful
-        When changes may require at any time
-        When long term project commitment is not feasible due to changes in economic priorities</p>
-    <img src="images/spiral_model.png" alt=""width="250px">
+      <p>Spiraalmudel on samuti üks iteratiivseid arendusmudeleid. Spiraalmudelit kirjeldas esimest korda Barry Boehm oma 1986 a. artiklis. 1988. a avaldas ta sarnase paberi laiemale publikule. </p>
+      <p>Protsessi kulgemist kujutab spiraal. Esimene kordus võib olla näiteks seotud süsteemi teostatavuse uurimisega, teine nõudmiste kirjeldamisega, järgmine kavandamisega jne. Mitu kordust on enamasti seotud tarkvara realiseerimisega, kus tema ehitamine toimub inkrementaalselt. Kuid kindlasti ei tohiks spiraali korduseid võrdsustada tavapäraste arendusprotsessi faasidega. Iga kordus on jaotatud 3 kuni 6 sektorisse (erinevad autorid jagavad erinevalt). Iga kordus algab lähema eesmärgi kavandamise ja riskide hindamisega ning lõppeb nö kliendiga - ehk eesmärk peab saama täidetud ja kontrollitud. Sektorite töömahukus ei pruugi olla ühesugune. Boehm'i järgi on sektoreid neli.</p>
+      <p>1. Eesmärkide seadmine (Objective setting) - määratakse selle faasi ehk korduse eesmärgid, piirangud protsessis, tulemused, juhtimisplaan, võimalikud riskid ning alternatiivsed strateegiad lähtudes riskidest.</p>
+      <p>2. Riskide hindamine ja maandamine (Risk assessment and reduction) - iga leitud riski jaoks tehakse analüüs, võetakse midagi ette riskide maandamiseks (nt risk, et nõudmised pole adekvaatsed: tehakse prototüüp)</p>
+      <p>3. Arendus ja valideerimine (Development and validation) - valitakse arendusmudel, mis lähtub hinnatud riskidest (mudel peab olema selline, mis riske vähendada aitab). Nt kui kasutajaliides on suurim risk, siis võib aidata prototüüpide tegemine.</p>
+      <p>4. Planeerimine (Planning) - projekt vaadatakse üle ja tehakse otsus, kas jätkata järgmisel kordusel, kui otsustatakse jätkata, tehakse järgmise faasi jaoks plaan.</p>
+    <img src="images/Spiraalmudel.png" alt=""width="550px">
+    <p>Selle mudeli kõige olulisem erinevus teistest on riskidega arvestamine. Risk - so võimalus, et midagi saab untsu minna. Riskide realiseerumise tõttu ületatakse tähtajad ja maksumus, seepärast peab riskidega arvestama ning võtma midagi ette nende maandamiseks.</p>
+    <p>Sommerville'i järgi täpselt sellist mudelit kasutatakse harva, kuid ta on aidanud mõista iteratiivse arenduse olemust ja juhtinud tähelepanu riskidega tegelemise vajalikkusele.</p>
+    <p>Spiraalmudelit kasutavad tarkvarainsenerid ning see on eelistatud suurte, kallite ja keeruliste projektide jaoks.</p>
     </div>
 
-    <button class="accordion">V-Shape Model</button>
+    <button class="accordion">V-mudel ehk V-Shape Model</button>
     <div class="panel">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>Tarkvaraarenduses on V-mudel esindab arenguprotsessi, mida võib pidada koskmudeli pikenduseks. Lineaarselt allapoole liikumise asemel on protsessi etapid pärast kodeerimisfaasi ülespoole painutatud, moodustades tüüpilise V-kuju. V-mudel demonstreerib seoseid iga elutsükli faasi ja sellega seotud testimise faasi vahel. Horisontaalne ja vertikaalne telg tähistavad vastavalt aja või projekti terviklikkust (vasakult paremale) ja abstraktsiooni taset. </p>
+      <p>Esimest korda avaldati 1979. a Barry W.Boehm’i poolt.</p>
+      <p>Olemuselt koskmudel, kus suhtlemine (nõuete kogumine), modelleerimine ja realiseerimine on seostatud kvaliteedi kindlustamisega </p>
+      <p>Vasakult alla liikudes täpsustatakse nõuded kuni koodi genereerimiseni. </p>
+      <p>Edasi paremalt poolt üles liikudes, kontrollib arendusmeeskond nii koodi kui mudelite kvaliteeti. </p>
+      <p>Tegevused kulgevad jadamisi ning plussid ja miinused on samad koskmudeliga.</p>
+      <img src="images/V-Model.png" alt=""width="550px">
+      <p>Projekti määratlemise etapid:</p>
+      <p>Nõuete analüüs, Süsteemi disain, Arhitektuuri disain, Mooduli disain</p>
+      <p>Kodeerimise faas</p>
+      <p>Valideerimise etapid:</p>
+      <p>Ühikute testimine, Integreerimise testimine, Süsteemi testimine, Kasutaja aktsepteerimise testimine</p>
+      <p>Millal kasutada V-mudelit?</p>
+      <p>-Kui nõue on hästi määratletud ja mitte üheselt mõistetav.</p>
+      <p>-V-mudelit tuleks kasutada väikeste ja keskmise suurusega projektide puhul, kus nõuded on selgelt määratletud ja fikseeritud.</p>
+      <p>-V-mudel tuleks valida siis, kui on olemas näidistehnilised ressursid ja olulised tehnilised teadmised.</p>
+      <p>- Viimasel ajal on seda kasutusele võtnud meditsiiniseadmete tööstuses.</p>
     </div>
 
-    <button class="accordion">Agile Model</button>
+    <button class="accordion">Agiilne mudel ehk Agile Model</button>
     <div class="panel">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>Tasapisi hakkas välja kujunema uus paradigma: mida kiirem, seda parem. Mitmed inimesed jõudsid järeldusele, et mida varem saab tellija kätte tulemuse, seda parem. Nii saab kiiremini otsustada, kas see, mida tehakse, ikka vastab vajadustele, kas projekti on mõtet arendada või pole see kuluefektiivne ning tuleb aegsasti kinni panna.</p>
+      <p>Uuteks meetoditeks kujunesid: Extreme Programming, Scrum, DSDM (Dynamic System Development Method), Adaptive Software Development, Crystal, Feature-Driven Development, Pragmatic Programming jne.</p>
+      <p>11.-13.02.2001 kohtusid 17 nimetatud meetodite nimekamat kasutajat ja/või leiutajat ning leppisid kokku uue paradigma sõnastuses agiilsuse manifest:</p>
+      <p>“Tarkvara luues ning teisi tarkvara loomise juures aidates oleme leidnud selleks tööks paremaid viise. Oleme hakanud hindama:</p>
+      <p>-Inimesi ja nendevahelist suhtlust rohkem kui protsesse ja arendusvahendeid,</p>
+      <p>-Töötavat tarkvara rohkem kui kõikehõlmavat dokumentatsiooni,</p>
+      <p>-Koostööd kliendiga rohkem kui läbirääkimisi lepingute üle,</p>
+      <p>-Reageerimist muutunud oludele rohkem kui algse plaani järgimist.</p>
+      <p>Ka parempoolsetel teguritel on väärtus, kuid me hindame vasakpoolseid tegureid kõrgemalt.”</p>
+      <p>Agiilse arendamise mudeli puhul tarnitakse tellijale valmistarkvara iga etapi lõpus. Etapid on lühikesed – 1-2 nädalat (mõni meetod lubab ka 4 nädalat, mis on pigem erand). Iga päev saab projekti meeskond kokku, et kiiresti arutleda, mis möödunud päeval tehtud on, kas mõni ülesanne vajab lisatuge. Agiilse meetodi juures võib olla väga vähe rolle. Näiteks Scrumi puhul on minimaalne rollide arv kolm: tooteomanik, scrum-master ja meeskonnaliige. Iga iteratsiooni lõpus toimub tagasivaade: mida saab antud etapil õppida, mis läks hästi, mis halvasti.</p>
+      <img src="images/Agiilne mudel.jpg" alt=""width="650px">
+      <p>Millal kasutada agiilset mudelit?</p>
+      <p>Agiilne mudel sobib, kui:</p>
+      <p>-Meeskond (tooteomanik, arendustiim) on väga tugev;</p>
+      <p>-On soov projektiga kiiresti alustada (ei vaja pikka analüüsi faasi);</p>
+      <p>-On tõenäosus, et mõned nõuded ilmnevad hiljem;</p>
+      <p>-Rahastus ei ole probleemiks.</p>
     </div>
     
     <script>
