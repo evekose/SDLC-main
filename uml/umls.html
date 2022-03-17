@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        
+        span{
+            font-weight: 700;
+        }
+        
+        .accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+            transition: 0.4s;
+        }
+
+        .active,
+        .accordion:hover {
+            background-color: #ccc;
+        }
+
+        .panel {
+            padding: 0 18px;
+            display: none;
+            background-color: white;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>UML Diagrammid – millist diagrammi kasutada ja miks?</h2>
+    <p><a href="https://drawio-app.com/create-uml-activity-diagrams-in-draw-io/">By Kymberly Fergusson</a></p>
+    <p>Unified Modeling Language (UML) on diagrammide tähistus (keel), mis võimaldab teil süsteeme ja tarkvara visualiseerida. See on tarkvaraarenduse üks populaarsemaid diagrammide koostamise vorme ja sai ISO standardiks 1997. aastal.</p>
+
+    <p>Diagramme on lihtsam ja kiirem mõista kui teksti, seega sobivad need süsteemide dokumenteerimiseks paremini kui miljonites koodiridades olevad kommentaarid, kuigi need on samuti olulised!</p>
+
+    <p>On kaks põhikategooriat ja 14 erinevat tüüpi UML diagramme, mida kasutatakse erinevates olukordades.</p>
+    <ul>
+        <li><span>Struktuuridiagrammid:</span> näitavad süsteemi komponentide vahelisi staatilisi seoseid</li>
+        <li><span>Käitumise diagrammid:</span> näitavad, kuidas süsteemis olevad komponendid üksteisele reageerivad, need näitavad, kuidas süsteem muutub ja mõnel diagrammil, kuidas see aja jooksul muutub</li>
+    </ul>
+    <img style="width: 800px;" src="../images/Types of UML Diagrams.png" alt="UML Diagrammid ">
+    
+    <p>Osasid UML-diagramme kasutatakse enamikus olukordades tarkvaraarenduse või süsteemide modelleerimisel, sealhulgas IT infrastruktuuris ja ärisüsteemides. Top3 UML-diagrammi, hõlmavad kasutusjuhtude diagramme, klassidiagramme (kui olete programmeerija) ja järjestusdiagramme.</p>
+    
+    <button class="accordion">Kasutusjuhtude diagramm (Use case diagram) </button>
+    <div class="panel">
+        <p>Kasutusjuhtude diagramme kasutatakse tarkvaraarenduse nõuete faasis – need panevad tavaliselt süsteeminõuded diagrammivormingusse ja on lihtne näha, milliseid toiminguid süsteem peab toetama. Muidugi on teie süsteemil palju kasutusjuhtumeid ja seetõttu peate tavaliselt joonistama palju kasutusjuhtude diagramme!</p>
+        <p>Koos teiste UML diagrammidega, nagu tegevus-, jada- ja komponentdiagrammid, aitavad kasutusjuhtude diagrammid visualiseerida oma tarkvara ja nõudeid, enne programmeerima hakkamist.</p>
+        <img style="width: 500px;" src="../images/UseCase-HabitTrackingApp.png" alt="Use Case Diagram">
+    </div>
+
+    <button class="accordion">Klassidiagramm (Class diagram)</button>
+    <div class="panel">
+        <p>Objektorienteeritud programmeerimiskeeled põhinevad klassidel ja nendevahelistel suhetel. Nende programmide visuaalseks esitamiseks töötati välja UML-i klassidiagrammide tähistus.</p>
+        <p>Klassid sisaldavad nende atribuute (andmeid) ja käitumist (liikmefunktsioonid) ning on üksteisega seotud mitmesuguste konnektoritega.</p>
+        <p>Klassiskeeme ei kasutata ainult programmeerimiseks. Näiteks saavad ärianalüütikud modelleerida ettevõtte varade ja nendega seotud protsesside struktuuri.</p>
+        <img style="width: 700px;" src="../images/Class-Diagram-Habit-Tracker-app.png" alt="Class Case Diagram">
+    </div>
+
+    <button class="accordion">Järjestusdiagramm (Sequence diagram)</button>
+    <div class="panel">
+        <p>Järjestusdiagramme kasutatakse nii programmide, äriprotsesside kui ka IT-infrastruktuuride siseste interaktsioonide visualiseerimiseks. Need kirjeldavad interaktsioonide (sõnumite) järjestust osalejate ja objektide (nt andmebaasid või välised liidesed) vahel.</p>
+        <p>Miks peaksime tegema järjestusdiagrammi pärast seda, kui oleme tegevusskeemis käitumist modelleerinud?</p>
+        <p>Mõlemad on käitumisskeemid, kuna modelleerivad protsessi etappe. Tegevusdiagramme on kiirem koostada ja need on „kõrgel tasemel“ – need näitavad teile teabevoogu, kuid mitte seda, millal või millises järjekorras teave liigub.</p>
+        <p>Järjestusdiagrammid võtavad klassid koos nende andmete ja toimingutega ning tegevusskeemides modelleeritud üldise käitumise ning näitavad, kuidas see kõik kokku sobib. Lisaks tegeliku liidese osadele saate oma programmi kirjutada klassi- ja järjestusskeemide kombinatsioonist!</p>
+        <img style="width: 600px;" src="../images/drawioUMLsequenceDiagram-checkin.png" alt="Sequence Diagram">
+    </div>
+
+    <button class="accordion">Tegevusdiagramm (Activity diagram)</button>
+    <div class="panel">
+        <p>Tegevusdiagrammid modelleerivad kasutajate ja süsteemide käitumist protsessi järgides. Need on teatud tüüpi vooskeemid või töövood, kuid neil on veidi erinev kuju.</p>
+        <ul>
+            <li><span>Algus/lõpp:</span> kasutage musta või tahket ringi, et näidata, kust diagramm algab, ja pidevat ringi, mille ümber on rõngas, et näidata protsessi lõppu.</li>
+            <li><span>Toimingud:</span> kasutage toimingu nimega ümardatud ristkülikuid.
+            <li><span>Otsused:</span> kasutage teemante alati, kui on valikuvõimalus. Saate lisada otsuse küsimusena teemandi sisse või märkida otsuse tulemus väljuvatele nooltele, selle asemel et kasutada lihtsalt jah/ei silte.</li>
+            <li><span>Jaga/liitu:</span> kasutage paksu riba, et näidata, kus tegevused jagunevad või ühinevad.</li>
+        </ul>
+        <img style="width: 400px;" src="../images/ActivityDiagram-HabitTrackerApp.png" alt="Activity Diagram">
+    </div>
+
+    <button class="accordion">Olekudiagramm (State diagram)</button>
+    <div class="panel">
+        <p>Olekudiagramme on programmeerimisel kasutatud erinevate olekute kirjeldamiseks, milles süsteem võib olla aastakümneid. Need ei piirdu programmeerimisega – igal süsteemil ja protsessil on olekud. Neid diagramme on kiirem luua kui tegevus- või järjestusskeeme, kuid need näitavad vähem teavet.</p>
+        <p>Olekudiagrammid näitavad, millised olekud viivad üksteiseni ja mis käivitab olekumuutuse.</p>
+        <p>Suurim erinevus olekudiagrammide ja tegevuste või interaktsioonide ülevaate diagrammi vahel seisneb selles, et olekudiagrammid ei näita (tingimata) järjestust. Need näitavad lihtsalt, millised olekud on võimalikud ning nende sisenemis- ja väljumispunktid, mitte aga seda, millal need olekud sisestatakse.</p>
+        <p>Olekudiagrammid võivad olla väga keerulised – saate olekudiagramme pesastada, seada oleku ette valvurid (tõene/väär), lisada olekumuutusest käivitatud toiminguid ja isegi sündmuste hilisemaks töötlemiseks edasi lükata. Need diagrammid võivad olla väga tekstirohked ja tingimused on tavaliselt kirjutatud ühe konkreetse programmeerimiskeele jaoks. See võib muuta diagrammide vaatamise keeruliseks, kuid see võib muuta ka programmeerimise (ja testimise) kiiremaks, kuna jääb vähem ruumi arusaamatusteks.</p>
+        <img style="width: 700px;" src="../images/UML-state-diagram-Habit-Tracker-example.png" alt="State Diagram">
+    </div>
+
+    <button class="accordion">Interaktsiooni ülevaate diagramm (Interaction overview diagram)</button>
+    <div class="panel">
+        <p>Interaktsiooni ülevaate diagrammid on kombinatsioon tegevusdiagrammidest ja järjestusdiagrammidest, kus iga üksiktegevus on paigutatud oma raamidesse, nii et seda on lihtsam programmeerida.</p>
+        <p>Iga individuaalne tegevus või interaktsioon on paigutatud oma raamidesse. Otsused on väljaspool raame, et näidata kontrolli voogu erinevate interaktsioonide vahel.</p>
+        <p>Interaktsioonid ise kaadrite sees on väga sarnased järjestusdiagrammidega. Interaktsioonide vahel on teil otsused (teemantid) ja kahvel- ja liitumissõlmed (horisontaalsed ristkülikud) ja konnektorid, mis näitavad juhtimisvoogu. Samuti on olemas alg- ja lõppsõlmed, mis näitavad üldise interaktsiooni algust ja lõppu.</p>
+        <img style="width: 500px;" src="../images/Interaction-Overview-Habit-Tracker.png" alt="Interaction Overview Diagram">
+    </div>
+
+    <button class="accordion">Suhtlusdiagramm (Communication diagram)</button>
+    <div class="panel">
+        <p>Suhtlusdiagrammid on veel üks viis UML-i järjestusdiagrammidega sagedamini esitatud teabe visualiseerimiseks. Need on lihtsamad kui järjestusdiagrammid ja näitavad ainult sõnumeid, mis liiguvad objektide või rollide vahel tarkvaraprogrammis, infrastruktuuris või mis tahes protsessis.</p>
+        <p>Kui teil on ühel kasutusjuhul mitu stsenaariumi, aitavad UML-i suhtlusdiagrammid selgelt tuvastada, milliseid sõnumeid (andmeid) tuleb iga konkreetse stsenaariumi korral objektide/rollide vahel saata.</p>
+        <img style="width: 800px;" src="../images/UML-communication-habitCheckin.png" alt="Communication Diagram">
+    </div>
+
+    <button class="accordion">Fridge Tracker App Use Case Diagram  </button>
+    <div class="panel">
+        <img src="../images/Fridge Tracker App.png" alt="Fridge Tracker App">
+    </div>
+
+    <button class="accordion">BitCoin Calculator App Activity Diagram </button>
+    <div class="panel">
+        <p><a href="https://github.com/evekose/TARge21-BitCoinCalculatorApp" target="_blank">My BitCoin Calculator</a></p>
+        <img src="../images/BitCoinCalculatorApp_ActivityDiagram.png" alt="BitCoin Calculator App Activity Diagram">
+    </div>
+
+
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+</body>
+
+</html>
